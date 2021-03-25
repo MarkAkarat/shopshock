@@ -12,9 +12,10 @@
 <form action="handle.php" method="post">
 <center><table>
 <tr><td>Username :</td> <td><input type="text" name="log_username" required></td></tr>
-<tr><td>password :</td> <td><input type="text" name="log_password" required></td></tr>
-</table>
-<center><button type="submit">Login</button><button type="reset">รีเซ็ต</button></center>
+<tr><td>password :</td> <td><input type="password" name="log_password" required></td></tr>
+<tr><td colspan="2" align="center"><button type="submit">Login</button>   <button type="reset">รีเซ็ต</button>   <a href="Register.php"><input type="button" value="สมัครสมาชิก"></a></td></tr>
+</table>    
+
 </center>
 </form>
 </body>

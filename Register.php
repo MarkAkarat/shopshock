@@ -15,7 +15,7 @@ div {
 </style>
 </head>
 <body>
-    <form action="handle.php" method="post">
+    <form action="verified.php" method="post">
     <div>
     shopshock 
     <table>

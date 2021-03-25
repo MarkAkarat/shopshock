@@ -40,7 +40,7 @@ class db{
             foreach($row as $key => $value){
                 echo "<td>{$value}</td>";
             }
-            echo "<td><a href='http:'>ShopShock</a></td>";
+            echo "<td><a href='addproduct.php?pld={$row['Product_id']}'>ShopShock</a></td>";
             echo "</tr>";
         }
         echo "</table><center>";
@@ -61,5 +61,11 @@ class db{
         return $row;
     }
 
+    public function show_prosale($id){
+        $sql = "SELECT `Product_id`, `Product_code`, `Product_Name`, `Brand_name`, `Unit_name`, `Cost`,`Stock_Quantity` FROM `product`,`brand`,`unit` WHERE product.Brand_ID =brand.Brand_id AND product.Unit_ID = unit.Unit_id AND product.Product_id={$id}";
+        $rs = $this->dbCon->query($sql);
+        return $rs->fetch_assoc();
+    }
+    
 }//ปีกกาคลาสนะ
 ?>

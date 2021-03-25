@@ -9,9 +9,9 @@
 <body>
 <?php
     include_once "class.php";
+    include_once "verified.php";
     $db = new db();
     $db->connect();
-    session_start();
    ?>
    <!-- <table align="right" border="1">
     <tr><td></td></tr>
@@ -29,8 +29,5 @@
         $db->show_product();
     ?>
 
-    
-   
-    
 </body>
 </html>
